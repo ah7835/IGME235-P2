@@ -1,0 +1,246 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    height: 195px;
+    /* background: rgb(0,0,36);
+background: linear-gradient(180deg, rgba(0,0,36,1) 0%, rgba(133,133,255,1) 56%, rgba(0,212,255,1) 100%, rgba(0,212,255,0) 100%); */
+}
+
+header h1 {
+    margin: 0;
+    color: #512DA8;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 35px;
+
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background-color: #D1C4E9;
+}
+
+#status {
+    font-style: italic;
+    /* height: 32px; */
+}
+
+#content{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 20px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px 0 rgba(0,0,0,.4);
+}
+
+.result img{
+    width: 100%;
+}
+
+.inputTerm, .limiter, .rating {
+    margin-bottom: 8px;
+    margin-right: 16px;;
+}
+
+.specificSearch{
+    display: flex;
+    /* flex-direction: column; */
+    font-weight: bold;
+}
+
+#searchterm{
+    padding: 5px;
+}
+
+
+button {
+    display: inline-block;
+    cursor: pointer;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    font-size: 9.5pt;
+    font-weight: bold;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+button.pink {
+    background: #E040FB;
+}
+button.border {
+    background: #212121;
+    border-color: #E040FB;
+}
+button.gify {
+    background: #D1C4E9;
+    border-color: #E040FB;
+    color:#512DA8;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button, .gifSearch :hover  {
+    background: #673AB7;
+    color: white;
+}
+
+button:active {
+    background: #673AB7;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+}
+
+button:focus {
+    outline: 0;
+}
+
+button#popular:hover {
+    background: #673AB7;
+}
+
+.togeButton {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.currentStatusText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#feedbackText {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 0;
+    color: darkgreen;
+    font-weight: bold;
+}
+#status {
+    text-align: center;
+    color: #570066;
+}
+
+.widgets {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#searchterm, #limit {
+    border-color: Pink;
+    padding: 2px;
+}
+
+section {
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+}
+
+.morebuttons{
+    display: flex;
+    justify-content: center;
+}
+
+.bottomButtons{
+    margin-top: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.bottomButtons:hover {
+    background:#E040FB;
+    border-color: #E040FB;
+    color:white;
+}
+
+.bottomButtons.pink:hover{
+    background:#570066;
+}
+.bottomButtons.pink:active{
+    background:#D1C4E9;
+    border-color: #E040FB;
+    color: #570066;
+}
+
+.bottomButtons:active {
+    background:#D1C4E9;
+    border-color: #E040FB;
+    color: #570066;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .specificSearch{
+        margin-bottom: 24px;
+    } 
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        height: 100px;
+    }
+    header h1 {
+        font-size: 65px;
+        padding-top: 35px;
+    }
+    .specificSearch{
+        margin-bottom: 24px;
+    }
+    .inputTerm, .limiter, .rating {
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 12px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 440px) {
+    header {
+        height: 100px;
+    }
+    header h1 {
+        font-size: 40px;
+        padding-top: 15px;
+    }
+
+    .specificSearch{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    .inputTerm, .limiter, .rating {
+        margin-right: 6px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    
+}
+
